@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin:  90px auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color:#EEE;
+    border-bottom: solid #ccc;
+    position: sticky;
+    top:0px;
+    z-index: 5;
+}
+
+nav .right-nav ul{
+    display: flex;
+    gap: 30px;
+list-style:none;
+}
+nav .right-nav a{
+    font-size: 18px;
+    color: black;
+    padding:10px ;
+    transition: .5s;
+
+}
+nav .right-nav a:hover{
+    background-color:#ccc;
+}
+
+nav .left-nav a{
+    font-size: 18px;
+    color: black;
+    padding:10px ;
+    transition: .5s;
+
+}
+nav .left-nav a span{
+font-weight: bold;
+margin-right: 10px;
+}
+nav .left-nav a:hover{
+    background-color:#ccc;
+}
+
+nav .menu{
+    font-size: 25px;
+    display: none;
+}
+/* header */
+header{
+    background-image: url(pic/architect\ \(1\).jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    
+}
+header h2{
+    font-size: 30px;
+    color: white;
+}
+h2 span{
+    background-color: black;
+    padding: 10px;
+    opacity: .7;
+}
+
+/* sec 1 projects */
+
+
+.projects h3{
+    margin:70px 0px 10px;
+}
+ hr{
+margin: 20px;
+opacity: .2px;
+}
+.houses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.house{
+    width: 24%;
+    position: relative;
+
+}
+
+.house img{
+width: 100%;
+}
+ .houses p{
+    position: absolute;
+    top: 0px;
+    color: #EEE;
+    background-color: black;
+    padding:7px;
+} 
+
+/* about */
+
+.About h2{
+    margin:70px 0px 10px;
+   
+}
+.main-p{
+    margin-bottom: 20px;
+}
+.chars{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.char{
+    width: 24%;
+}
+.char img{
+    width: 100%;
+}
+.char >*{
+    margin: 10px;
+}
+
+.char h4{
+    opacity: .5;
+}
+.char button{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .4s;
+}
+.char button:hover{
+    background-color: #ccc;
+}
+
+/* content */
+.content p {
+margin: 20px 0px;
+
+}
+.content .child{
+    width: 98%;
+padding: 10px;
+margin: 5px 0px;
+}
+.content button {
+    margin: 10px 0px;
+    border: none;
+    padding: 12px;
+    background-color: black;
+    color: #EEE;
+    width: 150px;
+    text-transform: uppercase;
+}
+
+section img{
+    width:100% ;
+    margin-bottom: 0px; ;
+}
+
+.footer p{
+    background-color:#000;
+    text-align: center;
+    color: #EEE;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+/* responsive */
+/* phone */
+
+@media screen and (max-width:480px) {
+    nav{
+        padding: 20px;
+    }
+    
+nav .right-nav ul{
+    display: none;
+}
+nav .menu{
+    display: block
+}
+header h2{
+   left: 10%;
+}
+
+.houses{
+    flex-direction: column;
+    width: 400%;
+
+}
+.chars{
+    flex-direction: column;
+    width: 400%;
+}
+}
+
+/* tablet*/
+/* 
+@media screen and (min-width:481px) and ( max-width:768)
+{
+    nav{
+        padding: 20px;
+    }
+    
+nav .right-nav ul{
+    display: none;
+}
+nav .menu{
+    display: block
+}
+header h2{
+   left: 20%;
+}
+
+.houses{
+    flex-direction: row;
+flex-wrap: wrap;
+    width: 300%;
+
+}
+.chars{
+    flex-direction: column;
+    width: 400%;
+}
+} */
